@@ -6,7 +6,10 @@ def lcoe(production=None, cap_cost=None, fixed_om=None):
     Real levelized cost of electricity (LCOE).
 
     Includes cost of capital and fixed operations and maintenance (O&M), but not variable O&M.
-    Described in [1]_, pp. 43 and 47-48.
+    Described in [1]_, pp. 43 and 47-48, and defined here as
+    .. math::
+        \frac{\text{total capital cost} + \text{total fixed O&M costs}}{\text{lifetime 
+        energy production}}
 
     Parameters
     ----------
